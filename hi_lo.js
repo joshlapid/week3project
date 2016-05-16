@@ -44,16 +44,16 @@ $(document).ready(function(){
     }
   };
 
-  function myKeypressHandler(e) {
-    if(e.which === 13) {
-      compareNums();
-    };
-  }
 
   $("#submit").on(
     "click",
     compareNums
   )
+  function myKeypressHandler(e) {
+    if(e.which === 13) {
+      compareNums();
+    };
+  }
 
   $("#user_guess").on(
     "keypress",
